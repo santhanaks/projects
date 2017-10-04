@@ -13400,7 +13400,6 @@ SUVORK5CYII=
 </ul>
 <p>Ideally, we would like 100% of human images with a detected face and 0% of dog images with a detected face.  You will see that our algorithm falls short of this goal, but still gives acceptable performance.  We extract the file paths for the first 100 images from each of the datasets and store them in the numpy arrays <code>human_files_short</code> and <code>dog_files_short</code>.</p>
 <p>__Answer:</p>
-<p>As seen below, the algorithm performs reasonably well with 98% of humans detected in human pictures compared to the 100% expected. The performance on dog pictures is not as good with 11% of human faces detected in dog pictures compared to the expected 0%.</p>
 
 </div>
 </div>
@@ -13457,6 +13456,8 @@ SUVORK5CYII=
 <p><strong>Question 2:</strong> This algorithmic choice necessitates that we communicate to the user that we accept human images only when they provide a clear view of a face (otherwise, we risk having unneccessarily frustrated users!). In your opinion, is this a reasonable expectation to pose on the user? If not, can you think of a way to detect humans in images that does not necessitate an image with a clearly presented face?</p>
 <p><strong>Answer:</strong></p>
 <p>We suggest the face detector from OpenCV as a potential way to detect human images in your algorithm, but you are free to explore other approaches, especially approaches that make use of deep learning :).  Please use the code cell below to design and test your own face detection algorithm.  If you decide to pursue this <em>optional</em> task, report performance on each of the datasets.</p>
+<p>As seen above, the Haar face detection algorithm performs reasonably well with 98% of humans detected in human pictures compared to the 100% expected. The performance on dog pictures is not as good with 11% of human faces detected in dog pictures compared to the expected 0%.</p>
+<p>A brief survey of the link provided at <a href="http://cs.wellesley.edu/~vision/slides/Qianli_summary_deep_face_models.pdf">http://cs.wellesley.edu/~vision/slides/Qianli_summary_deep_face_models.pdf</a> shows that a combination of large scale datasets with deep learning techniques with transfer learning will enable us to separate out the individual feature components i.e. nose, eyes, etc. and these can be used to successfully identify faces with much higher accuracy levels</p>
 
 </div>
 </div>
